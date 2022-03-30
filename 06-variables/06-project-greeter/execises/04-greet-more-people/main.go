@@ -8,38 +8,29 @@
 
 package main
 
-import (
-	"fmt"
-	"os"
-)
-
 // ---------------------------------------------------------
-// EXERCISE: Print Your Name
+// EXERCISE: Greet More People
 //
-//  Get it from the first command-line argument
+// RESTRICTIONS
+//  1. Be sure to match the expected output below
+//  2. Store the length of the arguments in a variable
+//  3. Store all the arguments in variables as well
 //
 // INPUT
-//  Call the program using your name
+//  bilbo balbo bungo
 //
 // EXPECTED OUTPUT
-//  It should print your name
-//
-// EXAMPLE
-//  go run main.go tinivella
-//
-//    tinivella
-//
-// BONUS: Make the output like this:
-//
-//  go run main.go tinivella
-//    Hello Tinivella
-//    How are you?
+//  There are 3 people!
+//  Hello great bilbo !
+//  Hello great balbo !
+//  Hello great bungo !
+//  Nice to meet you all.
 // ---------------------------------------------------------
 
 func main() {
-	fmt.Println(os.Args[0])
+	// TYPE YOUR CODE HERE
 
-	// Bonus solution
-	fmt.Println("Hello", os.Args[1])
-	fmt.Println("How are you?")
+	// BONUS #1:
+	// Observe the error if you pass less then 3 arguments.
+	// Search on the web how to solve that.
 }
