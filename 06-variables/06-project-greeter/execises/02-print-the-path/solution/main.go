@@ -8,21 +8,25 @@
 
 package main
 
+import (
+	"fmt"
+	"os"
+)
+
 // ---------------------------------------------------------
-// EXERCISE: Discard The File
+// EXERCISE: Print the Path
 //
-//  1. Print only the directory using `path.Split`
+//  Print the path of the running program by getting it
+//  from `os.Args` variable.
 //
-//  2. Discard the file part
+// HINT
+//  Use `go build` to build your program.
+//  Then run it using the compiled executable program file.
 //
-// RESTRICTION
-//  Use short declaration
-//
-// EXPECTED OUTPUT
-//  secret/
+// EXPECTED OUTPUT SHOULD INCLUDE THIS
+//  myprogram
+// ---------------------------------------------------------
 
 func main() {
-	// UNCOMMENT THE CODE BELOW:
-
-	// ? ?= path.Split("secret/file.txt")
-} // ---------------------------------------------------------
+	fmt.Println(os.Args[0])
+}

@@ -8,21 +8,26 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Discard The File
+// EXERCISE: Convert and Fix #5
 //
-//  1. Print only the directory using `path.Split`
+//  Fix the code.
 //
-//  2. Discard the file part
-//
-// RESTRICTION
-//  Use short declaration
+// HINTS
+//   maximum of int8  can be 127
+//   maximum of int16 can be 32767
 //
 // EXPECTED OUTPUT
-//  secret/
+//  1127
+// ---------------------------------------------------------
 
 func main() {
-	// UNCOMMENT THE CODE BELOW:
+	// DO NOT TOUCH THESE VARIABLES
+	min := int8(127)
+	max := int16(1000)
 
-	// ? ?= path.Split("secret/file.txt")
-} // ---------------------------------------------------------
+	// FIX THE CODE HERE
+	fmt.Println(int8(max) + min)
+}

@@ -8,21 +8,25 @@
 
 package main
 
+import (
+	"fmt"
+	"os"
+)
+
 // ---------------------------------------------------------
-// EXERCISE: Discard The File
+// EXERCISE: Count the Arguments
 //
-//  1. Print only the directory using `path.Split`
+//  Print the count of the command-line arguments
 //
-//  2. Discard the file part
-//
-// RESTRICTION
-//  Use short declaration
+// INPUT
+//  bilbo balbo bungo
 //
 // EXPECTED OUTPUT
-//  secret/
+//  There are 3 names.
+// ---------------------------------------------------------
 
 func main() {
-	// UNCOMMENT THE CODE BELOW:
+	count := len(os.Args) - 1
 
-	// ? ?= path.Split("secret/file.txt")
-} // ---------------------------------------------------------
+	fmt.Printf("There are %d names.\n", count)
+}

@@ -8,21 +8,20 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Discard The File
+// EXERCISE: Convert and Fix #2
 //
-//  1. Print only the directory using `path.Split`
-//
-//  2. Discard the file part
-//
-// RESTRICTION
-//  Use short declaration
+//  Fix the code by using the conversion expression.
 //
 // EXPECTED OUTPUT
-//  secret/
+//  10.5
+// ---------------------------------------------------------
 
 func main() {
-	// UNCOMMENT THE CODE BELOW:
 
-	// ? ?= path.Split("secret/file.txt")
-} // ---------------------------------------------------------
+	a, b := 10, 5.5
+	a = int(b)
+	fmt.Println(float64(a) + b)
+}
